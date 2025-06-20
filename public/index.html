@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang ="vi">
+    <head>
+        <meta charset ="UTF-8"/>
+        <title> Quản lí môn học</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1> Quản lý môn học </h1>
+        <div style = "text-align: center;">
+            <input type = "text" id="maMon" placeholder="Mã môn học"/>
+            <input type = "text" id="tenMon" placeholder="Tên môn học"/>
+            <input type = "number" id="diemMon" placeholder="Điểm môn học"/>
+        </div>
+        <div style = "text-align: center;">
+             <button onclick = "themMon()"> Thêm </button>  <button onclick="xoaTatCa()">Xoá tất cả</button> <button onclick="taiFile()">Tải danh sách</button>
+
+
+        </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Mã môn</th>
+                    <th>Tên môn</th>
+                    <th>Điểm</th>
+                </tr>
+            </thead>
+            <tbody id="bangMonHoc"></tbody>
+        </table>
+        <script src = "script.js"> </script>
+    </body>
+</html>
